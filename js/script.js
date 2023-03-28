@@ -280,12 +280,31 @@
 //     return res;
 // }
 // repeatStr(3,'*');
+// Вам будет дан массив a и значение x. Все, что вам нужно сделать, это проверить,
+// содержит ли предоставленный массив значение. Массив может содержать числа или строки.
+// Х может быть любым. Возвращает true, если массив содержит значение, и false, если нет.
 
+// function check(a, x) {
+//     for (let elem of a) {
+//         if (elem === x) {
+//             return true
+//         }
+//     }
+//     return false;
+// }
+// check([1,2,3,'3','w',5],4);
 
-
-
-
-
+// const stringToNumber = function(str){
+//     let res = [];
+//     for (let elem of str) {
+//         res.push(elem)
+//     }
+//     let result = +res.join('')
+//     console.log(result)
+//     return result;
+// }
+//
+// stringToNumber(['1','2','3','4'])
 
 
 
