@@ -111,10 +111,86 @@
 // * Если функции передана действительная строка PIN-кода, верните true,
 // * иначе верните false.
 
-function validatePIN(pin) {
-    return (pin.length === 4 || pin.length === 6) && /^\d+$/.test(pin);
-}
+// function validatePIN(pin) {
+//     return (pin.length === 4 || pin.length === 6) && /^\d+$/.test(pin);
+// }
+
+// ! 8
+// ? Ваша задача — создать две функции (max и min или максимум и
+// ? минимум и т. д., в зависимости от языка),
+// ? которые получают на вход список целых чисел и возвращают наибольшее
+// ? и наименьшее число из этого списка соответственно.
+
+// function max(arr) {
+//     let maxVal = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > maxVal) {
+//             maxVal = arr[i];
+//         }
+//     }
+//     return maxVal;
+// }
+//
+// function min(arr) {
+//     let minVal = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] < minVal) {
+//             minVal = arr[i];
+//         }
+//     }
+//     return minVal;
+// }
+//
+// let numbers = [-52, 56, 30, 29, -54, 0, -110];
+// console.log(max(numbers));
+// console.log(min(numbers));
+
+// ! 9
+// ? Напишите функцию, которая удаляет
+// ? пробелы из строки, а затем возвращает результирующую строку.
+
+// function noSpace(x) {
+//    let test = x.split('');
+//    let res = test.filter(function(x) {
+//        return x !== ' ';
+//    })
+//    return res.join('');
+// }
+//
+// console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'))
+
+// function init(x) {
+//     return x.split(" ").join('');
+// }
+// console.log(init('8 j 8   mBliB8g  imjB8B8  jl  B'));
+
+// ! 10
+// ? Месси — футболист, забивший голы в трёх лигах:
+// ? Ла Лига
+// ? Кубок Испании
+// ? Чемпионы
+// ? Завершите функцию, чтобы вернуть общее количество голов во всех трех лигах.
+// ? Примечание: ввод всегда будет действительным.
+
+// function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+//   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+// }
+// let res = goals(5,10,2);
+// console.log(res);
 
 
+// ! 11
+// ? Функция перемещения терминала в игре
+// ? В этой игре герой движется слева направо.
+// ? Игрок бросает кубик и дважды перемещает количество мест, указанное на кубике.
+// ? Создайте функцию для терминальной игры, которая принимает
+// ? текущую позицию героя и делает бросок (1-6) и возвращает новую позицию.
+
+// function move(position,roll) {
+//     const x = roll * 2;
+//     return position + x;
+// }
+// let res = move(3,6);
+// console.log(res);
 
 
